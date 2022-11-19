@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const p = document.createElement('p');
+
+    p.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, fugiat soluta, repudiandae mollitia minima. Fugiat soluta, repudiandae mollitia minima';
+
+    p.style.border = 'solid red'
+    p.style.textAlign = 'left'
+    p.style.display = 'flex'
+    p.style.justifyContent = 'space-between'
+    p.style.fontSize = '20px'
+    p.style.borderRadius = '10px'
+    p.style.margin = '0px 500px 0px 500px'
+    p.style.padding = '10px 10px'
+    p.style.fontWeight = 'bold'
+
+    const div = document.createElement('div')
+    div.style.display = 'flex'
+    div.justifyContent = 'center'
+    div.style.marginTop = '15px'
+
+    const link_1 = document.createElement('a')
+    link_1.href = 'https://intocode.ru/'
+    link_1.title = 'intocode'
+    link_1.append(document.createTextNode('intocode'))
+    link_1.style.marginRight = '100px'
+    link_1.style.marginLeft = '580px'
+
+    const link_2 = document.createElement('a')
+    link_2.href = 'https://google.com/'
+    link_2.title = 'google'
+    link_2.append(document.createTextNode('google'))
+    link_2.style.marginRight = '100px'
+
+    const link_3 = document.createElement('a')
+    link_3.href = 'https://youtube.com/'
+    link_3.title = 'youtube'
+    link_3.append(document.createTextNode('youtube'))
+
+    div.append(link_1, link_2, link_3)
+    document.body.prepend(p, div);
+
+  </script>
+</body>
+
+</html>
